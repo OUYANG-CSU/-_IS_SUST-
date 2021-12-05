@@ -1,0 +1,11 @@
+{
+	//if our student number =x
+	//input it in the ""		
+	//just like this "stuNum" : "x",
+	"stuNum" : "",
+
+	//if our passWord number = y
+	//input it in the ""
+	//just like this "passWord" : "y"
+	"passWord": "",
+}
