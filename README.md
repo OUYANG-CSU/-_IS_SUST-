@@ -38,6 +38,7 @@
   大致是这样的：
   
   25 7 * * * /root/IS_SUST/shell_command/IS_SUST_daily_morning_and_afternoon_clock_in.sh
+  
   5 12 * * * /root/IS_SUST/shell_command/IS_SUST_daily_morning_and_afternoon_clock_in.sh
   
   
@@ -55,4 +56,31 @@
 2.利用某次正常提交表单时，跟踪到表单提交的网址，以及相关表单
 
 3.执行脚本，模拟登录以及每天的提交信息上报
+
+相关表单的意思如下：
+
+sfzx    是否在校
+
+tw      体温
+
+area
+
+city
+
+province
+
+address
+
+geo_api_info 位置信息情况 注意这一项一定要和提交时用F12调试模式下拿到的geo_api_info项一样，并且注意Utils.py中修改相关wlc_upload_msg中的信息的格式，特别是\"的应用
+
+sfcyglq 是否处于隔离期
+
+sfyzz 是否有症状
+
+qtqk 其他情况
+
+ymtys 这一项我也没搞懂
+
+
+
   
