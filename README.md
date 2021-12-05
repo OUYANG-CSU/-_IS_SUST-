@@ -13,14 +13,46 @@
 
   把整体文件夹上传到阿里云的的/root/下，并且更换文件夹的名字为IS_SUST，
 
-  在/root/IS_SUST/data/下添加自己的信息，
+  在自己的阿里云主机上/root/IS_SUST/data/下的config.json中添加自己的登录信息，
   
-  在计划任务中添加执行/root/IS_SUST/shell_command/下的
+  复制微信企业号中的填报信息的界面的网址到chrome浏览器，如果以前没复制过的话是会跳转到登录界面，如果以前PC端填报过的话，可以删除相关cookies
+  
+  默认是https://app.sust.edu.cn/ncov.dailyup 会自动跳转到登录界面
+  
+  在chrome中是使用F12进行调试，选择上方的Network进行跟踪
+  
+  输入帐号和密码，第一次不要输对，便于跟踪Network动向，登录时留意调试界面的报告，注意查看关键信息，Request URL, Request Headers栏下的
+  
+  在自己的阿里云下的/root/IS_SUST/utils/下的User.py文件中修改自己登录时的主机信息，便于拿到cookie,
+  
+  然后等某次到打卡时间，但是还没打卡的时候，登录PC端，从登录界面进去，填好信息，F12进入调试模式，点击提交时，注意留意调试界面，Request URL,Request Headers,以及最重要的是向某个地址提交的表单信息
+  
+  在自己的阿里去下的/root/IS_SUST/utils/下的Utils.py文件中修改提交时的主机信息，向哪个地址提交表单，修改表单，注意格式和\"的应用，可以参照我的Utils.py
+  
+  在计划任务中，我的阿里云是装的Centos7.9 everything 版本，故可以直接使用命令行
+  
+  crontab -e #进行修改计划任务
+  
+  添加执行/root/IS_SUST/shell_command/下的IS_SUST_daily_up_morning_and_afternoon.sh shell脚本的命令
+  
+  大致是这样的：
+  
+  25 7 * * * /root/IS_SUST/shell_command/IS_SUST_daily_morning_and_afternoon_clock_in.sh
+  5 12 * * * /root/IS_SUST/shell_command/IS_SUST_daily_morning_and_afternoon_clock_in.sh
+  
+  
+  crontab -l 是查看任务计划
+  
 
 202112051736:just go for dinner,and i will use the Chinese to explain the porject.
 
 202112051854：吃完饭回来，终于用上中文了，还是王永民的王码，哈哈
 
 先总体讲一下这个脚本的作用：
-1.通过
+
+1.通过PC端模拟手机登录，拿到cookies,
+
+2.利用某次正常提交表单时，跟踪到表单提交的网址，以及相关表单
+
+3.执行脚本，模拟登录以及每天的提交信息上报
   
