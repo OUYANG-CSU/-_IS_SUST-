@@ -20,7 +20,7 @@
   最后感谢陕西科技大学福慧图书馆303某位女同学，如果不是周五(20211203)早上你经过时，我被你吸引了，看出神了，但是大脑中提醒打卡的中断打断了我的美好想象，从而我有点厌恶这每天的打卡造成的思考的中断，这才给我力量下定决心去写这个打卡的脚本，祝你和你的小伙伴考研顺利，都能考上心仪大学的研究生
   
 20211205211204:The girl is just stangding opposite to me 6 meters away,i just want to share the good feeling with the whole world!
-20211205211717:Let's say: Good luck to her!
+20211205211717:Let's say: Good luck to her and her little friend!
 
 说明：
 
