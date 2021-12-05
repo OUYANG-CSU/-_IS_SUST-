@@ -17,7 +17,7 @@
   
   复制微信企业号中的填报信息的界面的网址到chrome浏览器，如果以前没复制过的话是会跳转到登录界面，如果以前PC端填报过的话，可以删除相关cookies
   
-  默认是https://app.sust.edu.cn/ncov.dailyup 会自动跳转到登录界面
+  默认是https://app.sust.edu.cn/site/ncov/dailyup 会自动跳转到登录界面
   
   在chrome中是使用F12进行调试，选择上方的Network进行跟踪
   
