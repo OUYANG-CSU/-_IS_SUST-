@@ -52,7 +52,7 @@
   
   在chrome中是使用F12进行调试，选择上方的Network进行跟踪
   
-  输入帐号和密码，第一次不要输对，便于跟踪Network动向，登录时留意调试界面的报告，注意查看关键信息，Request URL, Request Headers栏下的
+  输入帐号和密码，第一次不要输对，便于跟踪Network动向，登录时留意调试界面的报告，注意查看关键信息，Request URL, Request Headers栏下的关键信息
   
   在自己的阿里云下的/root/IS_SUST/utils/下的User.py文件中修改自己登录时的主机信息，便于拿到cookie,
   
