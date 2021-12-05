@@ -35,9 +35,9 @@
     
     echo "Hello the girl" | mail -s "Love Letter" 520303@qq.com  
   
-    3.2可以参考 
+    3.2可以参考 https://segmentfault.com/a/1190000015143877
       
-      进行邮箱的配置
+      进行mail命令的配置
  
  
 详细用法：
@@ -102,7 +102,7 @@ province
 
 address
 
-geo_api_info 位置信息情况 注意这一项一定要和提交时用F12调试模式下拿到的geo_api_info项一样，并且注意Utils.py中修改相关wlc_upload_msg中的信息的格式，特别是\"的应用
+geo_api_info 位置信息情况 注意这一项一定要和提交时用F12调试模式下拿到的geo_api_info项一样，并且注意Utils.py中修改相关wlc_upload_msg中的信息的格式，特别是\\"的应用
 
 sfcyglq 是否处于隔离期
 
